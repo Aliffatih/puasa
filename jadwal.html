@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Jadwal Imsakiyah Bandung 1447 H</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <h1>🕌 Jadwal Imsakiyah Bandung 1447 H</h1>
+        <p class="subnav">Ramadhan Kareem • Semoga Ibadah Kita Diterima Allah SWT</p>
+    </nav>
+
+    <div class="container">
+        <div class="card">
+          <div class="info-box">
+    <h2 id="tanggalSekarang"></h2>
+    <p class="ramadhan-info" id="ramadhanHari"></p>
+    <div class="countdown-box">
+        <h3>⏳ Hitung Mundur Menuju Maghrib</h3>
+        <div id="countdown">00:00:00</div>
+    </div>
+</div>
+            <div class="controls">
+                <button onclick="hariIni()">Hari Ini</button>
+                <button onclick="scrollAwal()">Ke Awal</button>
+                <button onclick="scrollAkhir()">Ke Akhir</button>
+                <button onclick="toggleHighlight()">Highlight Hari Ini</button>
+            </div>
+
+            <div class="table-wrapper">
+                <table id="jadwalTable">
+                    <thead>
+                        <tr>
+                            <th>Hari</th>
+                            <th>Imsak</th>
+                            <th>Subuh</th>
+                            <th>Dzuhur</th>
+                            <th>Ashar</th>
+                            <th>Maghrib</th>
+                            <th>Isya</th>
+                        </tr>
+                    </thead>
+                    <tbody id="jadwalBody"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+<footer class="footer">
+    © 2026 Alif Fatih | Web dibuat 19-02-2026
+</footer>
+</body>
+</html>
